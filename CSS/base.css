@@ -1,0 +1,72 @@
+/* Variaveis */
+:root {
+    --branco: #fff;
+    --preto: #000000;
+    --vermelho: #7a0106;
+    --bege: #d1b48c;
+
+    --shadow: rgba(0, 0, 0, 0.468) 0px 5px 15px;
+    --fundo: rgba(0, 0, 0, 0.7)
+}
+
+/* Fontes */
+@font-face {
+    font-family: 'TheSunsetBold';
+    src: url('../FONTS/Fontspring-DEMO-theseasons-bd.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'TheSunsetRegular';
+    src: url('../FONTS/Fontspring-DEMO-theseasons-reg.otf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*
+
+    .josefin-sans-<uniquifier> {
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: var(--primaria);
+}
+
+button{
+    cursor: pointer;
+}
+
+/* Estilo para impedir de selecionar imagens e arrastá-las pela tela */
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* Barra de rolagem */
+body::-webkit-scrollbar {
+  width: 5px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--vermelho);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--bege);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: none;  /* creates padding around scroll thumb */
+}

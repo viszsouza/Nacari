@@ -1,0 +1,152 @@
+@import url("base.css");
+
+/* Inicio */
+header{
+    background-image: url('../IMG/ImagemFundoInicio.jpg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+
+    padding: 20px 20px 40px 20px;
+    object-fit: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    height: 700px;
+}
+
+nav{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-left: 60px;
+}
+
+.container-textos-inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 10px;
+
+    margin-left: 85px;
+}
+
+.container-textos-inicio h1{
+    font-family: 'TheSunsetBold';
+    color: var(--bege);
+    width: 50%;
+    font-size: 36px;
+}
+
+.container-textos-inicio span{
+    background-color: var(--vermelho);
+}
+
+.container-textos-inicio p{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+
+    color: var(--bege);
+    width: 50%;
+}
+
+.button-inicio button{
+    background-color: var(--vermelho);
+    color: var(--bege);
+    border: none;
+
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+
+    padding: 10px 20px;
+    margin-top: 20px;
+
+    transition: 300ms;
+    box-shadow: var(--shadow);
+}
+
+.button-inicio button:hover{
+    background-color: var(--bege);
+    color: var(--vermelho);
+}
+
+/* O QUE OFERECEMOS */
+.oferta{
+    background-color: var(--vermelho);
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tittle-oferta{
+    font-family: "Josefin Sans", sans-serif;
+    color: var(--bege);
+    font-size: 36px;
+    width: 20%;
+
+    margin-left: 85px;
+}
+
+.container-services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.item-services{
+    background-color: var(--bege);
+    max-width: 285px;
+    height: 450px;
+    color: var(--vermelho);
+    padding: 150px 20px 20px 20px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item-services h1{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.item-services p{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+}
+
+.button-oferta button{
+    background-color: var(--bege);
+    color: var(--vermelho);
+    border: none;
+
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+
+    padding: 10px 20px;
+    margin-left: 88px;
+
+    transition: 300ms;
+}
+
+.button-oferta button:hover{
+    transform: scale(0.95);
+    box-shadow: var(--shadow);
+}
