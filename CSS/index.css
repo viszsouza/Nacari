@@ -141,12 +141,85 @@ nav{
     font-size: 22px;
 
     padding: 10px 20px;
-    margin-left: 88px;
+    margin-left: 93px;
 
     transition: 300ms;
 }
 
 .button-oferta button:hover{
+    transform: scale(0.95);
+    box-shadow: var(--shadow);
+}
+
+/* Formulário */
+.formulario{
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+
+    background-color: var(--bege);
+}
+
+.container-text-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 35%;
+    gap: 10px;
+
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+
+    color: var(--vermelho);
+    text-transform: uppercase;
+}
+
+.container-text-formulario span{
+    color: var(--bege);
+    background-color: var(--vermelho);
+    padding: 2px;
+}
+
+.formulario-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 550px;
+    width: 100%;
+}
+
+.formulario-inputs input{
+    width: 100%;
+    background-color: transparent;
+    color: var(--vermelho);
+    border: 2px solid var(--vermelho);
+
+    padding: 13px;
+    font-size: 20px;
+}
+
+.formulario-inputs input:focus{
+}
+
+.formulario-inputs input::placeholder{
+    color: var(--vermelho);
+}
+
+.formulario-inputs button{
+    background-color: var(--vermelho);
+    color: var(--bege);
+    padding: 13px;
+    font-size: 20px;
+    border: none;
+
+    transition: 300ms;
+}
+
+.formulario-inputs button:hover{
     transform: scale(0.95);
     box-shadow: var(--shadow);
 }
