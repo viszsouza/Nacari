@@ -1,13 +1,13 @@
 @import url("base.css");
 
 /* Inicio */
-header{
+header {
     background-image: url('../IMG/ImagemFundoInicio.jpg');
     background-repeat: no-repeat;
     background-position: center right;
     background-size: cover;
 
-    padding: 20px 20px 40px 20px;
+    padding: 40px 110px;
     object-fit: cover;
 
     display: flex;
@@ -18,50 +18,48 @@ header{
     height: 700px;
 }
 
-nav{
+nav {
     display: flex;
     align-items: start;
     justify-content: start;
+    margin-left: -2%;
 }
 
-.logo{
+.logo {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    margin-left: 60px;
 }
 
-.container-textos-inicio{
+.container-textos-inicio {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: flex-start;
     gap: 10px;
 
-    margin-left: 85px;
+    width: 50%;
 }
 
-.container-textos-inicio h1{
+.container-textos-inicio h1 {
     font-family: 'TheSunsetBold';
     color: var(--bege);
-    width: 50%;
     font-size: 36px;
 }
 
-.container-textos-inicio span{
+.container-textos-inicio span {
     background-color: var(--vermelho);
 }
 
-.container-textos-inicio p{
+.container-textos-inicio p {
     font-family: "Josefin Sans", sans-serif;
     font-weight: 100;
     font-size: 24px;
 
     color: var(--bege);
-    width: 50%;
 }
 
-.button-inicio button{
+.button-inicio button {
     background-color: var(--vermelho);
     color: var(--bege);
     border: none;
@@ -77,67 +75,67 @@ nav{
     box-shadow: var(--shadow);
 }
 
-.button-inicio button:hover{
+.button-inicio button:hover {
     background-color: var(--bege);
     color: var(--vermelho);
 }
 
 /* O QUE OFERECEMOS */
-.oferta{
+.oferta {
     background-color: var(--vermelho);
-    padding: 40px 20px;
+    padding: 40px 110px;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.tittle-oferta{
+.tittle-oferta {
     font-family: "Josefin Sans", sans-serif;
     color: var(--bege);
     font-size: 36px;
     width: 20%;
 
-    margin-left: 85px;
 }
 
-.container-services{
+.container-services {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
-.item-services{
+.item-services {
     background-color: var(--bege);
     max-width: 285px;
     height: 450px;
     color: var(--vermelho);
     padding: 30px 20px 20px 20px;
-    
+
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.item-services img{
+.item-services img {
     width: 100px;
     height: 100px;
     object-fit: cover;
 }
 
-.item-services h1{
+.item-services h1 {
     font-family: "Josefin Sans", sans-serif;
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.item-services p{
+.item-services p {
     font-family: "Josefin Sans", sans-serif;
     font-size: 18px;
 }
 
-.button-oferta button{
+.button-oferta button {
     background-color: var(--bege);
     color: var(--vermelho);
     border: none;
@@ -147,33 +145,32 @@ nav{
     font-size: 22px;
 
     padding: 10px 20px;
-    margin-left: 93px;
 
     transition: 300ms;
 }
 
-.button-oferta button:hover{
+.button-oferta button:hover {
     transform: scale(0.95);
     box-shadow: var(--shadow);
 }
 
 /* Formulário */
-.formulario{
-    padding: 40px 20px;
+.formulario {
+    padding: 40px 110px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
 
     background-color: var(--bege);
 }
 
-.container-text-formulario{
+.container-text-formulario {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 35%;
+    width: 40%;
     gap: 10px;
 
     font-family: "Josefin Sans", sans-serif;
@@ -184,13 +181,13 @@ nav{
     text-transform: uppercase;
 }
 
-.container-text-formulario span{
+.container-text-formulario span {
     color: var(--bege);
     background-color: var(--vermelho);
     padding: 2px;
 }
 
-.formulario-inputs{
+.formulario-inputs {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -198,7 +195,7 @@ nav{
     width: 100%;
 }
 
-.formulario-inputs input{
+.formulario-inputs input {
     width: 100%;
     background-color: transparent;
     color: var(--vermelho);
@@ -208,14 +205,13 @@ nav{
     font-size: 20px;
 }
 
-.formulario-inputs input:focus{
-}
+.formulario-inputs input:focus {}
 
-.formulario-inputs input::placeholder{
+.formulario-inputs input::placeholder {
     color: var(--vermelho);
 }
 
-.formulario-inputs button{
+.formulario-inputs button {
     background-color: var(--vermelho);
     color: var(--bege);
     padding: 13px;
@@ -225,7 +221,64 @@ nav{
     transition: 300ms;
 }
 
-.formulario-inputs button:hover{
+.formulario-inputs button:hover {
     transform: scale(0.95);
     box-shadow: var(--shadow);
+}
+
+/* Estilos para telas de tablet e maiores */
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    header{
+        padding: 40px 40px;
+    }
+
+    .oferta{
+        padding: 40px 40px;
+    }
+
+    .formulario{
+        padding: 40px 40px;
+    }
+}
+
+/* Estilos para telas de desktop e maiores */
+@media (max-width: 1000px) {
+    body {
+        font-size: 20px;
+    }
+
+    header{
+        max-height: 100vh;
+        height: 100%;
+        padding-bottom: 70px;
+    }
+
+    .container-textos-inicio{
+        width: 100%;
+    }
+
+    .tittle-oferta{
+        width: 50%;
+    }
+
+    .item-services{
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .formulario {
+        flex-wrap: wrap;
+    }
+
+    .container-text-formulario{
+        width: 100%;
+    }
+
+    .formulario-inputs{
+        max-width: 100%;
+    }
 }
