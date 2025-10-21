@@ -7,8 +7,7 @@ document.getElementById("formulario").addEventListener("submit", function(event)
     const numero = document.getElementById("numero").value.trim();
 
     // Número do WhatsApp para onde será enviado (coloque o seu número aqui)
-    const numeroDestino = "5581999999999"; // Exemplo: 55 + DDD + número
-
+    const numeroDestino = "5581933005665"; // Exemplo: 55 + DDD + número
     // Monta a mensagem
     const mensagem = `Olá! 😄\n\nNome: ${nome}\nE-mail: ${email}\nWhatsApp: ${numero}\n\nTenho interesse na consultoria gratuita!`;
 

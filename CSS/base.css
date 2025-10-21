@@ -70,3 +70,95 @@ body::-webkit-scrollbar-thumb {
   border-radius: 0px;       /* roundness of the scroll thumb */
   border: none;  /* creates padding around scroll thumb */
 }
+
+/* Footer */
+footer{
+    background-color: var(--vermelho);
+    padding: 40px 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-infos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    padding-bottom: 40px;
+    border-bottom: 2px solid var(--bege);
+}
+
+.container-p1,.container-p2{
+    width: 50%;
+}
+
+.container-p1 h1{
+    width: 50%;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--bege);
+}
+
+.container-p2 p{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    color: var(--bege);
+    width: 100%;
+    text-transform: uppercase;
+
+    margin-top: 20px;
+}
+
+footer a{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    color: var(--bege);
+    width: 100%;
+    text-transform: uppercase;
+
+    transition: 300ms;
+}
+
+footer a:hover{
+    color: var(--branco);
+}
+
+
+/* Estilos para telas de tablet e maiores */
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    footer{
+        padding: 40px 40px;
+    }
+
+}
+
+/* Estilos para telas de desktop e maiores */
+@media (max-width: 1000px) {
+    body {
+        font-size: 20px;
+    }
+
+    .container-infos{
+        flex-direction: column;
+    }
+
+    .container-p1,.container-p2{
+    width: 100%;
+    }
+
+    .container-p1 h1{
+        width: 100%;
+    }
+}
