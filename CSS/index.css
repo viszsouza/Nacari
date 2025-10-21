@@ -22,7 +22,7 @@ nav {
     display: flex;
     align-items: start;
     justify-content: start;
-    margin-left: -2%;
+    margin-left: -30px;
 }
 
 .logo {
@@ -155,7 +155,7 @@ nav {
 }
 
 /* Processo */
-.processo{
+.processo {
     padding: 40px 110px;
     display: flex;
     flex-direction: column;
@@ -166,7 +166,7 @@ nav {
     background-color: var(--bege);
 }
 
-.processo h1{
+.processo h1 {
     font-family: "Josefin Sans", sans-serif;
     font-size: 36px;
     font-weight: 700;
@@ -174,7 +174,7 @@ nav {
     color: var(--vermelho);
 }
 
-.processo p{
+.processo p {
     font-family: "Josefin Sans", sans-serif;
     font-weight: 100;
     font-size: 22px;
@@ -183,7 +183,7 @@ nav {
     text-transform: uppercase;
 }
 
-.container-processos{
+.container-processos {
     width: 100%;
     margin-top: 20px;
 
@@ -194,19 +194,64 @@ nav {
     gap: 20px;
 }
 
-.processo-item{
+.processo-item {
     background-color: var(--vermelho);
     display: flex;
     justify-content: start;
     align-items: center;
-    
+
     gap: 10px;
     padding: 5px 40px;
 
 }
 
-.processo-item h1, .processo-item p{
+.processo-item h1,
+.processo-item p {
     color: var(--bege);
+}
+
+/* Portfólio */
+.portfolio {
+    background-color: var(--vermelho);
+    padding: 40px 110px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.portfolio img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 300ms;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.portfolio-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 300ms;
+    filter: saturate(1);
+}
+
+.portfolio-grid:hover img {
+    filter: saturate(0);
+    transform: scale(1);
+}
+
+.portfolio-grid img:hover {
+    filter: saturate(1);
+    transform: scale(1.05);
+    z-index: 1;
 }
 
 /* Formulário */
@@ -287,21 +332,32 @@ nav {
         font-size: 18px;
     }
 
-    header{
+    header {
         padding: 40px 40px;
     }
 
-    .oferta{
+    .oferta {
         padding: 40px 40px;
     }
 
-    .formulario{
+    .formulario {
         padding: 40px 40px;
     }
 
-    .processo{
+    .processo {
         padding: 40px 40px;
     }
+
+    .portfolio {
+        padding: 40px 40px;
+    }
+
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(0px, 1000px));
+        gap: 1rem;
+    }
+
 
 }
 
@@ -311,26 +367,26 @@ nav {
         font-size: 20px;
     }
 
-    header{
+    header {
         max-height: 100vh;
         height: 100%;
         padding-bottom: 70px;
     }
 
-    .container-textos-inicio{
+    .container-textos-inicio {
         width: 100%;
     }
 
-    .tittle-oferta{
+    .tittle-oferta {
         width: 50%;
     }
 
-    .item-services{
+    .item-services {
         max-width: 100%;
         height: 100%;
     }
 
-    .processo p{
+    .processo p {
         width: 100%;
     }
 
@@ -338,11 +394,11 @@ nav {
         flex-wrap: wrap;
     }
 
-    .container-text-formulario{
+    .container-text-formulario {
         width: 100%;
     }
 
-    .formulario-inputs{
+    .formulario-inputs {
         max-width: 100%;
     }
 }
