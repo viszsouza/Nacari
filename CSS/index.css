@@ -212,7 +212,8 @@ nav {
 
 /* Portfólio */
 .portfolio {
-    background-color: var(--vermelho);
+    background: #7A0106;
+background: linear-gradient(45deg, rgba(122, 1, 6, 1) 50%, rgba(54, 0, 3, 1) 100%);
     padding: 40px 110px;
 }
 
